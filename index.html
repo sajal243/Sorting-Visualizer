@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+
+            <!-- Given Input to Run -->
+
+            <div class="arr_inp">
+                <p>Size of Array : </p>
+                <input type="range" min="20" max="150" class="slider" id="a_size" value="80" step="1">
+                <p>Speed Of Algorithm: </p>
+                <input type="range" class="slider" id="a_speed" min="1" max="5" step="1" value="4">
+
+                <button id="gen_arr">Genereate New Array</button>
+            </div>
+
+            <div class="nav_right">
+                <h1 id="heading">Sorting Visualizer</h1>
+
+                <div class="algos">
+                    <button>Bubble Sort</button>
+                    <button>Selection Sort</button>
+                    <button>Insertion Sort </button>
+                    <button>Merge Sort</button>
+                    <button>Quick Sort</button>
+                    <button>Heap Sort</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Visualizer Section -->
+
+    <section>
+        <div id="info-cont1">
+            <p>This is my left Side Section</p>
+        </div>
+
+        <div class="arr_container"></div>
+
+        <div class="info-cont2">
+            <p>This is my Right Section</p>
+        </div>
+        
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+
+    </footer>
+    
+
+    <!-- Adding Javacript Work -->
+
+</body>
+</html>
