@@ -1,0 +1,115 @@
+$no_algos: 6;
+
+@mixin butt{
+    border: none;
+    background: transparent;
+    outline: none;
+    color: white;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+
+    font-weight: bold;
+
+}
+
+nav{
+    background-color: rgb(8, 131, 131);
+    color: white;
+    display: grid;
+    grid-template-columns: 30% 60%;
+    column-gap: 10%;
+    padding: 0% 5%;
+
+
+    .arr_inp
+    {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        place-content: center;
+        padding: 5% 0%;
+        font-size: large;
+
+        #a_size{
+            padding: 5% 0%;
+        }
+
+        #a_speed{
+            padding: 5% 0%;
+        }
+
+        #gen_arr{
+            @include butt();
+            padding: 5% 0% 0% 0%;
+            padding-left: 15%;
+            text-decoration: underline;
+            font-size: large;
+
+            &:hover{
+                color: yellow;
+                cursor: pointer;
+            }
+            
+        }
+
+    }
+
+    .nav_right{
+        display: flex;
+        flex-direction: column;
+
+        #heading{
+            display: inline-block;
+            font-size: xxx-large;
+            padding: 3% 0%;
+            padding-left: 19%;
+        }
+
+        .algos{
+            display: grid;
+            column-gap: 4%;
+            grid-template-columns: repeat($no_algos, (100%/$no_algos));
+            place-content: center;
+            padding: 2% 0%;
+
+            button{
+                @include butt();
+                padding: 5% 0%;
+                margin-right: 4%;
+                font-size: larger;
+
+                &:hover{
+                    color: yellow;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+}
+
+
+section{
+    display:grid;
+    grid-template-columns: 20% 60% 20%;
+
+    .info-cont1{
+        padding: 20%;
+    }
+
+    .arr-container{
+        display: flex;
+        width: 100%;
+        height: 70vh;
+    }
+
+    .info-cont2{
+        padding: 20%;
+    }
+}
